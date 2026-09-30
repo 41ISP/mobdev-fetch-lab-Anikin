@@ -1,0 +1,17 @@
+.home-page__inner {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.home-page__section-title {
+  font-size: 22px;
+  margin-bottom: var(--space-3);
+}
+
+.home-page__section--demo {
+  padding-top: var(--space-4);
+  border-top: 1px dashed var(--color-border);
+}
