@@ -7,7 +7,7 @@ function Footer() {
         <p className="footer__text">
           Учебный проект. Данные о фильмах предоставлены{' '}
           <a
-            href="https://www.omdbapi.com/"
+            to="https://www.omdbapi.com/"
             target="_blank"
             rel="noreferrer"
             className="footer__link"

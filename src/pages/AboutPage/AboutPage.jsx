@@ -1,7 +1,7 @@
 import About from '../../components/About/About';
 import './AboutPage.css';
 
-function AboutPage() {
+export default function AboutPage() {
   return (
     <main className="about-page">
       <div className="container">
@@ -11,4 +11,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+
