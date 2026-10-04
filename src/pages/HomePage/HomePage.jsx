@@ -18,8 +18,8 @@ export default function HomePage()
       setError(null)
       setIsLoading(true)
       setMovies()
-      const API_KEY = import.meta.env.VITE_OMDB_API_KEY
-      const res = await fetch(`http://www.omdbapi.com/?apikey=$[API_KEY]&s=${encodeURIComponent(query)}`)
+      const apiKey = import.meta.env.VITE_OMDB_API_KEY;
+      const res = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(query)}`);
       const data = await res.json()
         
         if (data.Response === 'False')  
@@ -48,7 +48,7 @@ export default function HomePage()
 
         <section className="home-page__section">
           <h2 className="home-page__section-title">Результат поиска</h2>
-          <MovieList />
+          <MovieList movies={movies} />
         </section>
       </div>
     </main>

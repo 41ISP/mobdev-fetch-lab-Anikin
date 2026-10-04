@@ -5,36 +5,32 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header__inner">
-        <NavLink 
-        to="/" 
-        className="header__logo">
+        <NavLink to="/" className="header__logo">
           <span className="header__logo-mark">OMDb</span>
           <span className="header__logo-sub">кинокаталог</span>
         </NavLink>
 
-        <nav 
-        className="header__nav">
-          <NavLink 
-          to="/" 
-          className={({ isActive}) =>
-            isActive
-               ? "header__nav-link header__nav-link--active"
-               : "header__nav-link" 
-               }
-               >
+        <nav className="header__nav">
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive
+                ? "header__nav-link header__nav-link--active"
+                : "header__nav-link"
+            }
+          >
             Главная
           </NavLink>
-          <NavLink 
-          to="/about" 
-          className={({ isActive }) =>
-            isActive
-              ? "header__nav-link header__nav-link--active"
-              :  "header__nav-link"
+
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "header__nav-link header__nav-link--active"
+                : "header__nav-link"
             }
-            >
-            Избранное
-          </NavLink>
-          <NavLink to="#" className="header__nav-link">
+          >
             О проекте
           </NavLink>
         </nav>

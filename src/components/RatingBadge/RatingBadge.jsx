@@ -1,12 +1,10 @@
 import './RatingBadge.css';
 
-function RatingBadge() {
+export default function RatingBadge({ source, value }) {
   return (
     <div className="rating-badge">
-      <span className="rating-badge__value">8.3/10</span>
-      <span className="rating-badge__source">Internet Movie Database</span>
+      <span className="rating-badge__value">{value}</span>
+      <span className="rating-badge__source">{source}</span>
     </div>
   );
 }
-
-export default RatingBadge;
